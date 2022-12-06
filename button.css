@@ -1,0 +1,88 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    position: relative;
+    /* margin: 0; */
+    margin-left: 100px;
+    padding: 0;
+    width: 220px;
+}
+
+.button__nonaction {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: #83C2D5;
+    transition: all 1s;
+    
+}
+
+.button__nonaction::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #83C2D5;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.button__nonaction::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 44px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #83C2D5;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+
+.button__action {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #5FA1A6;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.button:hover .button__nonaction::after {
+    left: -25px;
+    opacity: 1;
+    background-color: #5FA1A6;
+}
+
+.button:hover .button__nonaction::before {
+    left: -15px;
+    opacity: 1;
+    background-color: #5FA1A6;
+}
+
+.button:hover .button__action {
+    opacity: 1;
+    left: -40px;
+    background-color: #5FA1A6;
+}
+
+.button__nonaction:hover {
+    background-color: #5FA1A6;
+}
