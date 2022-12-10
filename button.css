@@ -133,6 +133,9 @@ body {
     border-radius: 15px;
     list-style: none;
     text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
     color: white;
     background-color: #83C2D5;
     transition: all 0.3s;
@@ -162,6 +165,9 @@ body {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
     color: white;
     background-color: #83C2D5;
     transition: all 0.3s;
