@@ -2,10 +2,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.container-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+    margin-left: 100px;
+}
+
 .button-line {
     position: relative;
     /* margin: 0; */
-    margin-left: 100px;
     padding: 0;
     width: 220px;
 }
@@ -90,11 +96,6 @@ body {
 
 /* ====ОСТАВИТЬ ЗАЯВКУ==== */
 
-.button__push {
-    margin-top: 100px;
-    margin-left: 100px;
-}
-
 .push__nonaction {
     padding: 18px 47px;
     border: 5px solid #E3E3E3;
@@ -119,11 +120,8 @@ body {
 .button-blur {
     position: relative;
     /* margin: 0; */
-    margin-left: 100px;
     padding: 0;
     width: 220px;
-
-    margin-top: 100px;
 }
 
 .button__nonaction-blur {
@@ -151,10 +149,7 @@ body {
 .button-send {
     position: relative;
     /* margin: 0; */
-    margin-left: 100px;
     padding: 0;
-    
-    margin-top: 100px;
 }
 
 .button-send__action {
