@@ -21,7 +21,7 @@ body {
     text-decoration: none;
     color: white;
     background-color: #83C2D5;
-    transition: all 0.1s;
+    transition: all 0.5s;
 }
 
 .button__nonaction::after {
@@ -34,7 +34,8 @@ body {
     border-radius: 20px;
     /* background-color: #83C2D5; */
     opacity: 0;
-    transition: left 0.5s, background-color 0.2s;
+    transition: all 0.3s;
+    z-index: -999;
 }
 
 .button__nonaction::before {
@@ -47,7 +48,8 @@ body {
     border-radius: 20px;
     /* background-color: #83C2D5; */
     opacity: 0;
-    transition: left 1s, background-color 0.5s;
+    transition: all 0.7s;
+    z-index: -999;
 }
 
 
@@ -60,7 +62,7 @@ body {
     height: 10px;
     border-radius: 20px;
     background-color: #5FA1A6;
-    transition: left 1s, background-color 0.5s;
+    transition: all 0.5s;
     opacity: 0;
 }
 
@@ -141,5 +143,35 @@ body {
 .button__nonaction-blur:hover {
     filter: drop-shadow(7px 6px 10px #C19A3F);
     backdrop-filter: blur(5px);
+    background-color: #C19A3F;
+}
+
+/* =========== */
+
+.button-send {
+    position: relative;
+    /* margin: 0; */
+    margin-left: 100px;
+    padding: 0;
+    
+    margin-top: 100px;
+}
+
+.button-send__action {
+    padding: 18px 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    border-radius: 29px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #83C2D5;
+    transition: all 0.3s;
+}
+
+.button-send__action:hover {
     background-color: #C19A3F;
 }
